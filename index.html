@@ -6,6 +6,10 @@
   <title>Kind Bites e-Portfolio</title>
 
   <style>
+    html {
+      scroll-behavior: smooth; /* Makes navbar navigation smooth */
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -89,14 +93,24 @@
       margin-bottom: 20px;
     }
 
-    .screenshot {
-      background: #eeeeee;
-      border: 2px dashed #bbbbbb;
-      padding: 35px;
-      text-align: center;
-      border-radius: 12px;
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 10px;
       margin: 15px 0;
-      color: #777;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     a.button {
@@ -112,6 +126,10 @@
 
     ul {
       padding-left: 22px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
     }
 
     footer {
@@ -140,7 +158,6 @@
 
   <section id="profile">
     <h2>Student Profile</h2>
-
     <div class="profile-grid">
       <div class="box"><strong>Name:</strong><br>NURDIANA BALQIS BINTI HASBULLAH</div>
       <div class="box"><strong>Matric No.:</strong><br>A212818</div>
@@ -169,167 +186,118 @@
     <h2>Lab Submissions</h2>
 
     <div class="card">
-  <h3>Lab 1 — UI</h3>
+      <h3>Lab 1 — UI</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/NtLstzoZTcc" title="Lab 1 UI Video" allowfullscreen></iframe>
+      </div>
+      <p><strong>Reflection:</strong> Designing the first screen helped me understand how layout, text, and buttons create a clear user experience.</p>
+    </div>
 
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/NtLstzoZTcc"
-      title="Lab 1 UI Video"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <p>
-    <strong>Reflection:</strong> Designing the first screen helped me understand how layout, text, and buttons create a clear user experience.
-  </p>
-</div>
+    <div class="card">
+      <h3>Lab 2 — Interaction</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/6V8NWCp3wLk" title="Lab 2 Interaction Video" allowfullscreen></iframe>
+      </div>
+      <p><strong>Reflection:</strong> Adding button actions made me understand how users interact with the app and receive feedback from the system.</p>
+    </div>
 
-<div class="card">
-  <h3>Lab 2 — Interaction</h3>
+    <div class="card">
+      <h3>Lab 3 — Material Design</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/gJeJkU51iWo" title="Lab 3 Material Design Video" allowfullscreen></iframe>
+      </div>
+      <p><strong>Reflection:</strong> Using Material Design helped me create a cleaner, more consistent, and user-friendly app interface.</p>
+    </div>
 
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/6V8NWCp3wLk"
-      title="Lab 2 Interaction Video"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <p>
-    <strong>Reflection:</strong> Adding button actions made me understand how users interact with the app and receive feedback from the system.
-  </p>
-</div>
+    <div class="card">
+      <h3>Lab 4 — Navigation</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/xmZRJldWKP4" title="Lab 4 Navigation Video" allowfullscreen></iframe>
+      </div>
+      <p><strong>Reflection:</strong> Creating navigation between screens helped me understand how users move smoothly through an application.</p>
+    </div>
 
-<div class="card">
-  <h3>Lab 3 — Material Design</h3>
+    <div class="card">
+      <h3>Lab 5 — Room</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ToAOpRe_whA" title="Lab 5 Room Video" allowfullscreen></iframe>
+      </div>
+      <p><strong>Reflection:</strong> Using Room taught me how important local data storage is for keeping app information organized and accessible.</p>
+    </div>
+  </section>
 
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/gJeJkU51iWo"
-      title="Lab 3 Material Design Video"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <p>
-    <strong>Reflection:</strong> Using Material Design helped me create a cleaner, more consistent, and user-friendly app interface.
-  </p>
-</div>
+  <section id="projects">
+    <h2>Project Milestones</h2>
 
-<div class="card">
-  <h3>Lab 4 — Navigation</h3>
+    <div class="card">
+      <h3>Project 1 — Kind Bites Basic App</h3>
+      <h4>Problem Statement</h4>
+      <p>
+        Many people want to help communities in need, but they may not know where to contribute food donations, how to find shelters, or how to join donation campaigns. At the same time, information about shelters and food-related initiatives may not be easily accessible in one platform. Therefore, Kind Bites was developed as a simple mobile application that helps users contribute to food donation, find shelters, and participate in campaigns more easily.
+      </p>
 
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/xmZRJldWKP4"
-      title="Lab 4 Navigation Video"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <p>
-    <strong>Reflection:</strong> Creating navigation between screens helped me understand how users move smoothly through an application.
-  </p>
-</div>
+      <h4>Working Features</h4>
+      <ul>
+        <li>Basic user interface for Kind Bites.</li>
+        <li>Navigation between application screens.</li>
+        <li>Food donation information screen.</li>
+        <li>Shelter information screen.</li>
+      </ul>
 
-<div class="card">
-  <h3>Lab 5 — Room</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Ayu4qA_jxFs" title="Project 1 Video" allowfullscreen></iframe>
+      </div>
+      <a class="button" href="https://drive.google.com/file/d/1ei1pbKW4VgU2zrKh7cXdeYE2Fw3bYDMw/view?usp=drive_link" target="_blank">GitHub Repository</a>
 
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/ToAOpRe_whA"
-      title="Lab 5 Room Video"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <p>
-    <strong>Reflection:</strong> Using Room taught me how important local data storage is for keeping app information organized and accessible.
-  </p>
-</div>
-<div class="card">
-  <h3>Project 1 — Kind Bites Basic App</h3>
+      <h4>Lessons Learned</h4>
+      <p>Building the first version of Kind Bites helped me connect UI design, navigation, and basic app features into one working project.</p>
+    </div>
 
-  <h4>Problem Statement</h4>
-  <p>
-    Many people want to help communities in need, but they may not know where to contribute food donations, how to find shelters, or how to join donation campaigns. At the same time, information about shelters and food-related initiatives may not be easily accessible in one platform. Therefore, Kind Bites was developed as a simple mobile application that helps users contribute to food donation, find shelters, and participate in campaigns more easily.
-  </p>
+    <div class="card">
+      <h3>Project 2 — Kind Bites with API, Sensors and Cloud</h3>
+      <h4>Problem Statement</h4>
+      <p>
+        Donors need a faster and easier way to find nearby shelters and submit food donation details. 
+        Shelters also need updated information about available donations. Kind Bites aims to solve this by using API integration, sensors and cloud storage.
+      </p>
 
-  <h4>Working Features</h4>
-  <ul>
-    <li>Basic user interface for Kind Bites.</li>
-    <li>Navigation between application screens.</li>
-    <li>Food donation information screen.</li>
-    <li>Shelter information screen.</li>
-  </ul>
+      <h4>API Integration</h4>
+      <p>
+        Kind Bites uses API integration to provide real-time and location-based services. The app can use a Maps API or Location API to display nearby shelters, calculate distance and provide directions. A Donation API can be used to submit food donation details such as food type, quantity, expiry date and pickup location.
+      </p>
 
-<div class="video-container">
-    <iframe 
-      src="https://youtu.be/Ayu4qA_jxFs"
-      title="Project 1 Video"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <a class="button" href="https://drive.google.com/file/d/1ei1pbKW4VgU2zrKh7cXdeYE2Fw3bYDMw/view?usp=drive_link" target="_blank">GitHub Repository</a>
+      <h4>Sensors</h4>
+      <p>
+        Kind Bites uses the phone GPS or location sensor to detect the user’s current location when searching for nearby shelters. The camera sensor can also be used to capture food images as proof or reference before submitting a donation.
+      </p>
 
-  <h4>Lessons Learned</h4>
-  <p>
-    Building the first version of Kind Bites helped me connect UI design, navigation, and basic app features into one working project.
-  </p>
-</div>
+      <h4>Cloud</h4>
+      <p>
+        Kind Bites can use Firebase as a cloud service to store user details, shelter information, donation records and uploaded images. Cloud storage allows the information to be updated and accessed more efficiently.
+      </p>
 
-<div class="card">
-  <h3>Project 2 — Kind Bites with API, Sensors and Cloud</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Ayu4qA_jxFs" title="Project 2 Video" allowfullscreen></iframe>
+      </div>
+      <a class="button" href="#" target="_blank">GitHub Repository</a>
 
-  <h4>Problem Statement</h4>
-  <p>
-    Donors need a faster and easier way to find nearby shelters and submit food donation details. 
-    Shelters also need updated information about available donations. Kind Bites aims to solve this by using API integration, sensors and cloud storage.
-  </p>
+      <h4>Lessons Learned</h4>
+      <p>Improving Kind Bites with API, sensors, and cloud features showed me how mobile apps can solve real-life problems more effectively.</p>
+    </div>
+  </section>
 
-  <h4>Project 2 Screens</h4>
-
-  <h4>API Integration</h4>
-  <p>
-    Kind Bites uses API integration to provide real-time and location-based services. 
-    The app can use a Maps API or Location API to display nearby shelters, calculate distance and provide directions. 
-    A Donation API can be used to submit food donation details such as food type, quantity, expiry date and pickup location.
-  </p>
-
-  <h4>Sensors</h4>
-  <p>
-    Kind Bites uses the phone GPS or location sensor to detect the user’s current location when searching for nearby shelters. 
-    The camera sensor can also be used to capture food images as proof or reference before submitting a donation.
-  </p>
-
-  <h4>Cloud</h4>
-  <p>
-    Kind Bites can use Firebase as a cloud service to store user details, shelter information, donation records and uploaded images. 
-    Cloud storage allows the information to be updated and accessed more efficiently.
-  </p>
-
-<div class="video-container">
-    <iframe 
-      src="https://youtu.be/Ayu4qA_jxFs"
-      title="Project 2 Video"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <a class="button" href="PASTE_PROJECT_2_GITHUB_LINK_HERE" target="_blank">GitHub Repository</a>
-
-  <h4>Lessons Learned</h4>
-  <p>
-    Improving Kind Bites with API, sensors, and cloud features showed me how mobile apps can solve real-life problems more effectively.
-  </p>
-</div>
-<p>
-  The most challenging part was connecting the app features into one complete project. Navigation and Room database required careful planning because the app needed to move smoothly between screens and manage data properly. 
-  Through Project 2, I also learned that API integration, sensors and cloud services can make an application more meaningful and useful for real users.
-</p>
-
-<p>
-  Kind Bites reflects the impact of SDG 2: Zero Hunger by supporting food donation and helping shelters receive food assistance. 
-  This project taught me that mobile applications are not only about design and coding, but also about solving real problems in society.
-</p>
+  <section id="reflection">
+    <h2>Core Reflection</h2>
+    <p>
+      The most challenging part was connecting the app features into one complete project. Navigation and Room database required careful planning because the app needed to move smoothly between screens and manage data properly. Through Project 2, I also learned that API integration, sensors and cloud services can make an application more meaningful and useful for real users.
+    </p>
+    <p>
+      Kind Bites reflects the impact of SDG 2: Zero Hunger by supporting food donation and helping shelters receive food assistance. This project taught me that mobile applications are not only about design and coding, but also about solving real problems in society.
+    </p>
+  </section>
 
   <section id="skills">
     <h2>Skills & Tech Stack</h2>
-
     <div class="skills-grid">
       <div class="box">Android Studio</div>
       <div class="box">Kotlin / Java</div>
@@ -346,19 +314,24 @@
 
   <section id="resources">
     <h2>Resources & References</h2>
-
     <ul>
-      <li>Android Developers Documentation</li>
-      <li>GitHub Pages Documentation</li>
-      <li>Firebase Documentation</li>
-      <li>Google Maps API / Location API references</li>
-      <li>Course lab materials and lecture notes</li>
-      <li>AI assistance was used to support writing, structure and e-portfolio content preparation.</li>
+      <li>
+        <strong>Google Android Developer Documentation:</strong> Specifications for Jetpack Compose layout components, view state tokens, Room persistence models, and robust repository abstractions. <a href="https://developer.android.com" target="_blank" style="color: #d97706;">developer.android.com</a>
+      </li>
+      <li>
+        <strong>Firebase Cloud Core Documentation:</strong> Structural guidelines for managing remote Realtime/Firestore document trees, live event synchronization observers, and security rule architectures. <a href="https://firebase.google.com" target="_blank" style="color: #d97706;">firebase.google.com</a>
+      </li>
+      <li>
+        <strong>Google Maps & Location Web API Manuals:</strong> Technical references for managing endpoint payloads, rendering dynamic JSON coordinates, and utilizing localized device hardware GPS telemetry.
+      </li>
+      <li>
+        <strong>Generative AI Utilities:</strong> Employed exclusively as system syntax checkers, error log diagnostics, layout structural reference generation, and documentation content compilation to maintain absolute authentic code ownership and developer clarity.
+      </li>
     </ul>
   </section>
 
   <footer>
-    <p>© 2026 Kind Bites e-Portfolio</p>
+    <p>© 2026 Nur Diana Balqis (A212818) | Mobile Programming Portfolio Entry. All Rights Reserved.</p>
   </footer>
 
 </body>
