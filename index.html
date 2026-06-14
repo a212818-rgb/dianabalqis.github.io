@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kind Bites e-Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f4ef;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffb347, #ffcc80);
+      padding: 60px 20px;
+      text-align: center;
+      color: #2b2b2b;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 8px 12px;
+      text-decoration: none;
+      color: #d97706;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #d97706;
+      border-bottom: 3px solid #ffe0b2;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #444;
+      margin-top: 25px;
+    }
+
+    .profile-grid, .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .box {
+      background: #fff7ed;
+      padding: 18px;
+      border-radius: 14px;
+      border-left: 5px solid #f59e0b;
+    }
+
+    .card {
+      background: #fdfaf5;
+      border: 1px solid #f3d5a5;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .screenshot {
+      background: #eeeeee;
+      border: 2px dashed #bbbbbb;
+      padding: 35px;
+      text-align: center;
+      border-radius: 12px;
+      margin: 15px 0;
+      color: #777;
+    }
+
+    a.button {
+      display: inline-block;
+      background: #f59e0b;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 5px 5px 5px 0;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Kind Bites e-Portfolio</h1>
+    <p>Food Donation and Shelter Finder Mobile Application</p>
+  </header>
+
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#labs">Labs</a>
+    <a href="#projects">Projects</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#skills">Skills</a>
+    <a href="#resources">Resources</a>
+  </nav>
+
+  <section id="profile">
+    <h2>Student Profile</h2>
+
+    <div class="profile-grid">
+      <div class="box"><strong>Name:</strong><br>YOUR NAME</div>
+      <div class="box"><strong>Matric No.:</strong><br>YOUR MATRIC NUMBER</div>
+      <div class="box"><strong>Programme:</strong><br>YOUR PROGRAMME</div>
+      <div class="box"><strong>Instructor:</strong><br>YOUR INSTRUCTOR NAME</div>
+    </div>
+
+    <h3>Short Introduction</h3>
+    <p>
+      I am a student who is learning mobile application development through practical lab activities and project-based learning. 
+      Through this course, I developed Kind Bites, a mobile application that connects food donors with nearby shelters to reduce food waste and support communities in need.
+    </p>
+
+    <h3>Learning Goals</h3>
+    <p>
+      My learning goals are to improve my understanding of user interface design, interaction, navigation, local database management, API integration, sensors and cloud services. 
+      I also aim to develop an application that can solve a real-life social issue through technology.
+    </p>
+
+    <h3>Chosen SDG</h3>
+    <p>
+      <strong>SDG 2: Zero Hunger.</strong> Kind Bites supports this goal by helping food donors share extra food with shelters and people who need food assistance.
+    </p>
+  </section>
+
+  <section id="labs">
+    <h2>Lab Submissions</h2>
+
+    <div class="card">
+      <h3>Lab 1 — UI</h3>
+      <div class="screenshot">Insert Lab 1 screenshot here</div>
+      <a class="button" href="https://youtu.be/NtLstzoZTcc" target="_blank">YouTube Video</a>
+      <p>
+        <strong>Reflection:</strong> Designing the first screen helped me understand how layout, text, and buttons create a clear user experience.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Lab 2 — Interaction</h3>
+      <div class="screenshot">Insert Lab 2 screenshot here</div>
+      <a class="button" href="https://youtu.be/6V8NWCp3wLk" target="_blank">YouTube Video</a>
+      <p>
+        <strong>Reflection:</strong> Adding button actions made me understand how users interact with the app and receive feedback from the system.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Lab 3 — Material Design</h3>
+      <div class="screenshot">Insert Lab 3 screenshot here</div>
+      <a class="button" href="https://youtu.be/gJeJkU51iWo" target="_blank">YouTube Video</a>
+      <p>
+        <strong>Reflection:</strong> Using Material Design helped me create a cleaner, more consistent, and user-friendly app interface.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Lab 4 — Navigation</h3>
+      <div class="screenshot">Insert Lab 4 screenshot here</div>
+      <a class="button" href="PASTE_YOUTUBE_LINK_HERE" target="_blank">YouTube Video</a>
+      <p>
+        <strong>Reflection:</strong> Creating navigation between screens helped me understand how users move smoothly through an application.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Lab 5 — Room</h3>
+      <div class="screenshot">Insert Lab 5 screenshot here</div>
+      <a class="button" href="https://youtu.be/ToAOpRe_whA" target="_blank">YouTube Video</a>
+      <p>
+        <strong>Reflection:</strong> Using Room taught me how important local data storage is for keeping app information organized and accessible.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Project Submissions</h2>
+
+    <div class="card">
+      <h3>Project 1 — Kind Bites Basic App</h3>
+
+      <h4>Problem Statement</h4>
+      <p>
+        Food waste is a common issue, while shelters and communities in need may not receive food support on time. 
+        Many donors also do not know where to send extra food. Therefore, Kind Bites was developed to provide a simple platform for food donation and shelter discovery.
+      </p>
+
+      <h4>Working Features</h4>
+      <ul>
+        <li>Basic user interface for Kind Bites.</li>
+        <li>Navigation between application screens.</li>
+        <li>Food donation information screen.</li>
+        <li>Shelter information screen.</li>
+      </ul>
+
+      <div class="screenshot">Insert Project 1 screenshot here</div>
+
+      <a class="button" href="PASTE_PROJECT_1_YOUTUBE_LINK_HERE" target="_blank">YouTube VSR</a>
+      <a class="button" href="PASTE_PROJECT_1_GITHUB_LINK_HERE" target="_blank">GitHub Repository</a>
+
+      <h4>Lessons Learned</h4>
+      <p>
+        Building the first version of Kind Bites helped me connect UI design, navigation, and basic app features into one working project.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Project 2 — Kind Bites with API, Sensors and Cloud</h3>
+
+      <h4>Problem Statement</h4>
+      <p>
+        Donors need a faster and easier way to find nearby shelters and submit food donation details. 
+        Shelters also need updated information about available donations. Kind Bites aims to solve this by using API integration, sensors and cloud storage.
+      </p>
+
+      <h4>Project 2 Screens</h4>
+      <div class="screenshot">Insert Project 2 Screen 1 screenshot here</div>
+      <div class="screenshot">Insert Project 2 Screen 2 screenshot here</div>
+
+      <h4>API Integration</h4>
+      <p>
+        Kind Bites uses API integration to provide real-time and location-based services. 
+        The app can use a Maps API or Location API to display nearby shelters, calculate distance and provide directions. 
+        A Donation API can be used to submit food donation details such as food type, quantity, expiry date and pickup location.
+      </p>
+
+      <h4>Sensors</h4>
+      <p>
+        Kind Bites uses the phone GPS or location sensor to detect the user’s current location when searching for nearby shelters. 
+        The camera sensor can also be used to capture food images as proof or reference before submitting a donation.
+      </p>
+
+      <h4>Cloud</h4>
+      <p>
+        Kind Bites can use Firebase as a cloud service to store user details, shelter information, donation records and uploaded images. 
+        Cloud storage allows the information to be updated and accessed more efficiently.
+      </p>
+
+      <a class="button" href="PASTE_PROJECT_2_YOUTUBE_LINK_HERE" target="_blank">YouTube VSR</a>
+      <a class="button" href="PASTE_PROJECT_2_GITHUB_LINK_HERE" target="_blank">GitHub Repository</a>
+
+      <h4>Lessons Learned</h4>
+      <p>
+        Improving Kind Bites with API, sensors, and cloud features showed me how mobile apps can solve real-life problems more effectively.
+      </p>
+    </div>
+  </section>
+
+  <section id="reflection">
+    <h2>Reflection & Learning Journey</h2>
+    <p>
+      My learning journey started with basic user interface design in Lab 1 and gradually progressed into interaction, Material Design, navigation and database management. 
+      At first, I found it challenging to understand how different components in a mobile application work together. However, each lab helped me build confidence step by step.
+    </p>
+
+    <p>
+      The most challenging part was connecting the app features into one complete project. Navigation and Room database required careful planning because the app needed to move smoothly between screens and manage data properly. 
+      Through Project 2, I also learned that API integration, sensors and cloud services can make an application more meaningful and useful for real users.
+    </p>
+
+    <p>
+      Kind Bites reflects the impact of SDG 2: Zero Hunger by supporting food donation and helping shelters receive food assistance. 
+      This project taught me that mobile applications are not only about design and coding, but also about solving real problems in society.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Tech Stack</h2>
+
+    <div class="skills-grid">
+      <div class="box">Android Studio</div>
+      <div class="box">Kotlin / Java</div>
+      <div class="box">UI Design</div>
+      <div class="box">Material Design</div>
+      <div class="box">Navigation</div>
+      <div class="box">Room Database</div>
+      <div class="box">API Integration</div>
+      <div class="box">Firebase / Cloud</div>
+      <div class="box">GitHub</div>
+      <div class="box">GitHub Pages</div>
+    </div>
+  </section>
+
+  <section id="resources">
+    <h2>Resources & References</h2>
+
+    <ul>
+      <li>Android Developers Documentation</li>
+      <li>GitHub Pages Documentation</li>
+      <li>Firebase Documentation</li>
+      <li>Google Maps API / Location API references</li>
+      <li>Course lab materials and lecture notes</li>
+      <li>AI assistance was used to support writing, structure and e-portfolio content preparation.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Kind Bites e-Portfolio | Prepared for Project 2</p>
+  </footer>
+
+</body>
+</html>
