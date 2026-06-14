@@ -7,7 +7,7 @@
 
   <style>
     html {
-      scroll-behavior: smooth; /* Makes navbar navigation smooth */
+      scroll-behavior: smooth;
     }
 
     body {
@@ -93,15 +93,17 @@
       margin-bottom: 20px;
     }
 
+    /* Updated Video Container styling */
     .video-container {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
-      max-width: 100%;
+      max-width: 640px;       /* Controlled maximum sizing */
+      margin: 20px auto;      /* Spaced out and perfectly centered */
       background: #000;
       border-radius: 10px;
-      margin: 15px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
     .video-container iframe {
@@ -245,7 +247,7 @@
       </ul>
 
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/Ayu4qA_jxFs" title="Project 1 Video" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/OqzGH6F3nUc" title="Project 1 Video" allowfullscreen></iframe>
       </div>
       <a class="button" href="https://drive.google.com/file/d/1ei1pbKW4VgU2zrKh7cXdeYE2Fw3bYDMw/view?usp=drive_link" target="_blank">GitHub Repository</a>
 
@@ -277,7 +279,7 @@
       </p>
 
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/Ayu4qA_jxFs" title="Project 2 Video" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/OqzGH6F3nUc" title="Project 2 Video" allowfullscreen></iframe>
       </div>
       <a class="button" href="#" target="_blank">GitHub Repository</a>
 
